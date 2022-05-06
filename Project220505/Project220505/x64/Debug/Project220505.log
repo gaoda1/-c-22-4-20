@@ -1,0 +1,2 @@
+﻿  源.cpp
+C:\Users\ZERO\C++\Project220505\Project220505\源.cpp(154,6): error C2040: “p”:“int”与“char *”的间接寻址级别不同
