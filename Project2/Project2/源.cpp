@@ -84,15 +84,60 @@
 //	return 0;
 //}
 
-struct s1
-{
-	char c1;
-	int a;
-	char c2;
-};
+//struct s1
+//{
+//	char c1;
+//	int a;
+//	char c2;
+//};
+//int main()
+//{
+//	struct s1 s1 = { 0 };
+//	printf("%d\n",sizeof(s1));
+//	return 0;
+//}
+
+
+//char* my_strstr(const char* p1,const char* p2)
+//{
+//	assert(p1 != NULL);
+//	assert(p2 != NULL);
+//	const char* s1 = p1;
+//	const char* s2 = p2;
+//	const char* cur = p1;
+//	if (*p2=='\0')
+//	{
+//		return NULL;
+//	}
+//	while (*cur)
+//	{
+//		while (*p1==*p2)
+//		{
+//			p1++;
+//			p2++;
+//		}
+//		p1++;
+//	}
+//	
+//}
+#include<ctype.h>
+/*memcpy 只处理 不重叠的内存拷贝就可以-60-100
+  memmove 处理重叠内存的拷贝*/
 int main()
 {
-	struct s1 s1 = { 0 };
-	printf("%d\n",sizeof(s1));
+	int i = 0;
+	char ch = toupper('q');
+	 putchar(ch);
+	 char arr[] = "I AM A STUDENT";
+	 while (arr[i])
+	 {
+		 if (i   supper(arr[i]))
+		 {
+			 arr[i]=tolower(arr[i]);
+		 }
+		 i++;
+	 }
+	 printf("%s\n",arr);
 	return 0;
 }
+
